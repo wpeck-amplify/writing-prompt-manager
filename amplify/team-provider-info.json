@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-promptmanager-staging-230544-authRole",
+      "UnauthRoleArn": "arn:aws:iam::077846485421:role/amplify-promptmanager-staging-230544-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::077846485421:role/amplify-promptmanager-staging-230544-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-promptmanager-staging-230544-deployment",
+      "UnauthRoleName": "amplify-promptmanager-staging-230544-unauthRole",
+      "StackName": "amplify-promptmanager-staging-230544",
+      "StackId": "arn:aws:cloudformation:us-west-1:077846485421:stack/amplify-promptmanager-staging-230544/83659230-f0ed-11ec-b5fc-02a2e97e2a2f",
+      "AmplifyAppId": "d26kajuy7hqn5k"
+    },
+    "categories": {
+      "auth": {
+        "PromptManager": {}
+      }
+    }
+  }
+}

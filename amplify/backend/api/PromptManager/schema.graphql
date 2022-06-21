@@ -1,0 +1,24 @@
+type Events @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  eventDate: AWSDate
+  EventPrompts: Prompts @hasOne
+  EventWritingGroups: WritingGroups @hasOne
+}
+
+type WritingGroups @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  groupName: String
+  WritingGroupUsers: [Users] @manyToMany(relationName: "WritingGroupsUsers")
+  createdOn: AWSDate
+  updatedOn: AWSDate
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  writinggroupss: [WritingGroups] @manyToMany(relationName: "WritingGroupsUsers")
+}
+
+type Prompts @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  description: String
+}
